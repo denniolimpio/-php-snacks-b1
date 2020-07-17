@@ -20,9 +20,9 @@ echo $age;
 if (strlen($name) < 3){
     echo $message;
 
-  } else if ( strops($mail, ' @') === false  || strops($mail, ' .') === false) {
+  } else if ( strpos($mail, ' @') === false){
     echo $message;
-  } else if ( ins_numeric($age) === false) {
+  } else if ( is_numeric($age) === false) {
 
     echo  $message;
   } else {
